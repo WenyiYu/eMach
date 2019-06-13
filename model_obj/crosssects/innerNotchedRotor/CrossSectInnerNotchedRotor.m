@@ -109,7 +109,7 @@ classdef CrossSectInnerNotchedRotor < CrossSectBase
                       lines(j)= drawer.drawLine(points(j,:), inner_points(j,:)); 
                      end
                     if (mod(j,2)==1 && j<(2*s+1))
-                        arc(j) = drawer.drawArc(obj.location.anchor_xy,inner_points(j,:),...
+                        arc_c(j) = drawer.drawArc(obj.location.anchor_xy,inner_points(j,:),...
                                 inner_points(j+1,:));
                         lines(j)= drawer.drawLine(points(j,:), inner_points(j,:));     
                     end           
